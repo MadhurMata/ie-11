@@ -20,6 +20,7 @@ function Filters() {
 
   useEffect(() => {
     if (items) filter();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkbox, searchValue, selectValue]);
 
   const toggleFilter = () => {
