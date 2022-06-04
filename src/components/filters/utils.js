@@ -11,9 +11,6 @@ export const dateFilter = (filteredData, selectValue) => {
     case '2':
       filteredData = filteredData.filter((item) => item.modified >= 2000);
       break;
-    default:
-      filteredData;
-      break;
   }
   return filteredData;
 };
