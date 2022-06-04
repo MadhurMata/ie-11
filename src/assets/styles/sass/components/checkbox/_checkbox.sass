@@ -9,7 +9,7 @@ input[type="checkbox"]
   & + label
     position: relative
     display: inline-block
-    padding: 6px 10px 6px ($checkbox-width + 10)
+    padding: 6px 10px 6px 28px
     margin-right: 32px
     cursor: pointer
 
@@ -26,7 +26,7 @@ input[type="checkbox"]
       position: absolute
       left: 0
       top: 50%
-      margin: (-$checkbox-width/2) 0 0
+      margin: -9px 0 0
       width: $checkbox-width
       height: $checkbox-width
       background-image: url(/assets/images/checkbox.png)
@@ -40,7 +40,7 @@ input[type="checkbox"]
   // Checked State
   &:checked + label
     &:before
-      background-position: (-$checkbox-width) 0
+      background-position: -18px 0
 
 // Extra layout styling
 .form-checkbox
