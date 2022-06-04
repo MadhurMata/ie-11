@@ -1,0 +1,50 @@
+.hero-detail-top
+  margin: 32px 0
+  display: flex
+
+  &__img-container
+    background-color: $grey3
+    width: 50%
+
+    img
+      width: 100%
+      height: auto
+      aspect-ratio: attr(width) / attr(height)
+
+  &__info-container
+    display: flex
+    flex-direction: column
+    padding-left: 32px
+    width: 50%
+
+    h3, p
+      margin-bottom: 32px
+
+    h3
+      color: $grey2
+
+    p
+      display: inline-block
+      align-self: flex-end
+
+  @media screen and (max-width: 850px)
+    display: block
+    margin: 2 auto
+
+    &__info-container, &__img-container
+      width: auto
+      padding: 0
+
+      p
+        align-self: flex-start
+
+.hero-detail-bottom
+  width: 100%
+
+.truncate
+  @include truncateText(298px)
+
+.truncate-multipleLine
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
