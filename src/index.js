@@ -1,6 +1,10 @@
-import 'polyfill-library';
+import polyfillLibrary from 'polyfill-library';
 
-const polyfillBundle = polyfillLibrary.getPolyfillString({
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+polyfillLibrary.getPolyfillString({
 	uaString: 'Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)',
 	minify: true,
 	features: {
@@ -9,10 +13,6 @@ const polyfillBundle = polyfillLibrary.getPolyfillString({
 }).then(function(bundleString) {
 	console.log(bundleString);
 });
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
 
 
 ReactDOM.render(
